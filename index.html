@@ -13,6 +13,11 @@
     <style>
         body {
             background-color: #111629;
+            background-image: url('./assets/img/bg-illustration.svg');
+            background-position: right;
+            background-position-y:top;
+            background-size:40rem;
+            background-repeat: no-repeat;
         }
 
         .nav-container {
@@ -20,16 +25,11 @@
             flex-direction: column;
         }
 
-        .nav-logo {
+        .nav-container img {
             align-self: flex-start;
-            color: #3661E3;
-            margin-bottom: 1rem;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            margin-left: 1rem;
-        }
-
-        .nav-logo::before {
-            content: ''
+            width: 7rem;
+            margin-top:2rem;
+            margin-left:3rem;
         }
 
         .main-container {
@@ -40,9 +40,7 @@
         }
 
         .logo {
-            color: #3661E3;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 1.2rem;
+            margin-bottom: 2rem;
         }
 
         .form-container {
@@ -137,16 +135,14 @@
 
     <nav>
         <div class="nav-container" id="nav-container">
-            <h3 class="nav-logo">
-                QRCODE
-            </h3>
+            <img src="assets/img/logo-qr-generator.svg" alt="" >
         </div>
     </nav>
 
 
     <div class="main-container" id="main-container">
         <div class="logo">
-            <h3>QRCODE</h3>
+            <img src="assets/img/logo-qr-generator.svg" alt="">
         </div>
         <div class="form-container">
             <div class="qrform">
