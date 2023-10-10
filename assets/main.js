@@ -21,7 +21,7 @@ generateQRBtn.addEventListener('click', () => {
         buttonContainer.style.display = 'block';
         tmpInput = input.value;
     }else{
-
+        console.log('Not URL')
     }
 });
 
@@ -54,6 +54,6 @@ function copyURL() {
 }
 
 function checkURL(url) {
-    const URLpattern = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i;
+    const URLpattern = /([\w+]+\:\/\/)?([\w\d-]+\.)*[\w-]+[\.\:]\w+([\/\?\=\&\#\.]?[\w-]+)*\/?/gm;
     return URLpattern.test(url);
 }
